@@ -2,15 +2,24 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-logo {
+  height: 20vmin;
+  pointer-events: none;
+  /* width: 300px; */
+}
+
+.App-logo.vite {
+  margin-right: 20px;
+}
+
+.App-logo.react {
+  margin-left: 20px;
 }
 
 .App-header {
@@ -26,15 +35,6 @@
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 button {

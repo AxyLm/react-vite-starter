@@ -1,6 +1,7 @@
 import { useState } from "react";
 import logo from "./logo.svg";
-import "./App.css";
+import viteLogo from "./favicon.svg";
+import "./App.less";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -8,8 +9,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + Reac t!</p>
+        <div className="Logos">
+          <img src={viteLogo} className="App-logo vite" alt="logo" />
+          <img src={logo} className="App-logo react" alt="logo" />
+        </div>
+        <p>Hello Vite + React!</p>
         <p>
           <button type="button" onClick={() => setCount((count) => count + 1)}>
             count is: {count}
@@ -19,6 +23,15 @@ function App() {
           Edit <code>App.tsx</code> and save to test HMR updates.
         </p>
         <p>
+          <a
+            className="App-link"
+            href="https://github.com/AxyLm/react-vite-starter"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </a>
+          {" | "}
           <a
             className="App-link"
             href="https://reactjs.org"

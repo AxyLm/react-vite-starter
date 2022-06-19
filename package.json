@@ -30,6 +30,7 @@
     "*.{ts,tsx}": "eslint"
   },
   "dependencies": {
+    "less": "^4.1.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
