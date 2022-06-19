@@ -1,0 +1,47 @@
+{
+  "name": "vite-react",
+  "version": "0.0.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "ISC",
+  "author": "wy",
+  "scripts": {
+    "build": "tsc && vite build",
+    "dev": "vite",
+    "eslint": "eslint",
+    "lint": "lint-staged",
+    "prepare": "husky install",
+    "preview": "vite preview"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,md,html,css,json}": "prettier --write --fix",
+    "*.{ts,tsx}": "eslint"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "@vitejs/plugin-legacy": "^1.8.2",
+    "@vitejs/plugin-react": "^1.3.0",
+    "eslint": "^8.18.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.2",
+    "prettier": "^2.7.1",
+    "prettier-plugin-packagejson": "^2.2.18",
+    "pretty-quick": "^3.1.3",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.9",
+    "vite-tsconfig-paths": "^3.5.0"
+  }
+}
