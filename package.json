@@ -1,12 +1,21 @@
 {
-  "name": "vite-react",
-  "version": "0.0.0",
+  "name": "react-starter-vite",
+  "version": "0.0.1",
   "private": true,
+  "description": "a react template use vite.",
+  "keywords": [
+    "vite",
+    "react",
+    "typescript",
+    "eslint",
+    "prettier",
+    "husky"
+  ],
   "repository": {
     "type": "git",
     "url": ""
   },
-  "license": "ISC",
+  "license": "MIT",
   "author": "wy",
   "scripts": {
     "build": "tsc && vite build",
@@ -17,7 +26,7 @@
     "preview": "vite preview"
   },
   "lint-staged": {
-    "*.{js,ts,tsx,md,html,css,json}": "prettier --write --fix",
+    "*.{js,ts,tsx,md,html,css,json}": "prettier --write",
     "*.{ts,tsx}": "eslint"
   },
   "dependencies": {
